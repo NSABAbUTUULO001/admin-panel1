@@ -38,6 +38,8 @@ export default function AuthPage() {
         title: "Signed in successfully!",
         description: "Welcome back to your account.",
       })
+      localStorage.setItem("auth-token", "simulated-token")
+      window.location.href = "/dashboard"
     }, 1500)
   }
 
